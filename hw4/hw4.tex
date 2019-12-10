@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{fullpage}
+
+\setlength{\parindent}{0cm}
+
+\title{Homework Four}
+\author{Rob Phillips}
+\date{May 13, 2019}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper One}
+
+\textbf{Title:} The Communication Complexity of Distributed $\epsilon$-Approximations\\
+
+\textbf{Abstract:} Data summarization is an effective approach to dealing with the ``big data'' problem.
+While data summarization problems traditionally have been studied is the streaming
+model, the focus is starting to shift to distributed models, as distributed/parallel
+computation seems to be the only viable way to handle today's massive data sets. In
+this paper, we study epsilon-approximations, a classical data summary that,
+intuitively speaking, preserves approximately the density of the underlying data set
+over a certain range space. We consider the problem of computing
+epsilon-approximations for a data set which is held jointly by k players, and give
+general communication upper and lower bounds that hold for any range space whose
+discrepancy is known.\\
+
+\textbf{Violations found:}
+
+\begin{itemize}
+    \item Violates Knuth's rule in the title -- no symbols should be used.
+    \item ``While data summarization problems traditionally have been studied is the streaming model" is grammatically incorrect.
+    \item Uses the symbol for epsilon in title, but spells it out in the abstract -- inconsistent usage.
+    \item ``preserves approximately" might sound better as ``approximately preserves."
+    \item ``which is held jointly by" could be simply ``held jointly by."
+    \item ``intuitively speaking" should be cut out. Might be personal preference, but it sounds presumptuous and choppy.
+    \item Italicize the k in ``k players."
+\end{itemize}
+
+\textbf{Suggested revision:}\\
+
+\textit{Title:} The Communication Complexity of Distributed Epsilon-Approximations\\
+
+\textit{Abstract:} Data summarization is an effective approach to dealing with the ``big data'' problem.
+While data summarization problems traditionally have been studied under the streaming
+model, the focus is starting to shift to distributed models, as distributed and parallel
+computation seems to be the only viable way to handle today's massive data sets. In
+this paper, we study epsilon-approximations, a classical data summary that approximately preserves the density of the underlying data set over a certain range space. We consider the problem of computing
+epsilon-approximations for a data set held jointly by $k$ players, and give
+general communication upper and lower bounds that hold for any range space whose
+discrepancy is known.\\
+
+\section*{Paper Two}
+
+\textbf{Title:} ($2+\epsilon$)-SAT is NP-hard\\
+
+\textbf{Abstract:} We prove the following hardness result for a natural promise variant of the classical CNF-satisfiability problem: Given a CNF-formula where each clause has width $w$ and the guarantee that there exists an assignment satisfying at least $g = \lceil \frac{w}{2}\rceil -1$ literals in each clause, it is NP-hard to find a satisfying assignment to the formula (that sets at least one literal to true in each clause). On the other hand, when $g = \lceil \frac{w}{2}\rceil$, it is easy to find a satisfying assignment via simple generalizations of the algorithms for \textsc{$2$-Sat}.\\
+
+Viewing \textsc{$2$-Sat} $\in \mathrm{P}$ as easiness of \textsc{Sat} when $1$-in-$2$ literals are true in every clause, and NP-hardness of \textsc{$3$-Sat} as intractability of \textsc{Sat} when $1$-in-$3$ literals are true, our result shows, for any fixed $\epsilon > 0$, the hardness of finding a satisfying assignment to instances of ``\textsc{$(2+\epsilon)$-Sat}'' where the density of satisfied literals in each clause is promised to exceed $\frac{1}{2+\epsilon}$.\\
+
+We also strengthen the results to prove that given a $(2k+1)$-uniform hypergraph that can be 2-colored such that each edge has perfect balance (at most $k+1$ vertices of either color), it is NP-hard to find a 2-coloring that avoids a monochromatic edge. In other words, a set system with discrepancy $1$ is hard to distinguish from a set system with worst possible discrepancy.\\
+
+Finally, we prove a general result showing intractability of promise CSPs based on the paucity of certain ``weak polymorphisms." The core of the above hardness results is the claim that the only weak polymorphisms in these particular cases are juntas depending on few variables.\\
+
+\textbf{Violations found:}
+
+\begin{itemize}
+    \item Violates Knuth's rule in the title -- no symbols should be used.
+    \item Certainly violates the ``short and self-contained" guideline, and it is outside the range of one to three paragraphs.
+    \item Contains numerous formulae throughout the abstract, overusing the ``only when needed" rule.
+    \item Last paragraph contains a statement that does not suggest what the conclusions are.
+\end{itemize}
+
+\textbf{Suggested revision:}\\
+
+\textit{Title:} Variant of classical CNF-satisfiability problem is NP-hard\\
+
+\textit{Abstract:} We prove the following hardness result for a natural promise variant of the classical CNF-satisfiability problem: Given a CNF-formula where each clause has width $w$ and the guarantee that there exists an assignment satisfying at least half of the width $w$ in each clause, it is NP-hard to find a satisfying assignment to the formula (that sets at least one literal to true in each clause). On the other hand, when there exists an assignment that is exactly half the width, it is easy to find a satisfying assignment via simple generalizations of the algorithms for \textsc{$2$-Sat}.\\
+
+We also strengthen the results to prove that given a uniform hypergraph that can be two-colored such that each edge has perfect balance, it is NP-hard to find a two-coloring that avoids a monochromatic edge. In other words, a set system with a discrepancy of one is hard to distinguish from a set system with worst possible discrepancy.\\\\
+
+\end{document}
